@@ -1,5 +1,12 @@
-n=int(input())
-for i in range(n):
-    for j in range(i+1):
-        print(j+1,end=" ")
-    print()
+def moveZeroest(nums):
+    x=[]
+    y=[]
+    for i in range(len(nums)):
+        if nums[i]==0:
+            x.append(num[i])
+       else
+         y.append(nums[i])
+         z=y+x
+       print(z)
+nums=[0,1,0,3,12]
+moveZeroes(nums)
