@@ -1,14 +1,8 @@
-x=int(input())
-for i in range(x):
-    for j in range(x-i-1):
-        print(" ",end="")
-    for j in range(i+1):
-        print("*",end=" ")
-    print()
-for i in range(x-2,-1,-1):
-    for j in range(x-i-1):
-        print(" ",end="")
-    for j in range(i+1):
-        print("*",end=" ")
-    print()
-
+x=list(map(int,input().split()))
+min1=max1=x[0]
+for i in range(1,len(x)):
+    if x[i]<min1:
+        min1=x[i]
+    if x[i]>max1:
+        max1=x[i]
+print(min1,max1)
