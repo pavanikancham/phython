@@ -1,7 +1,8 @@
-x=int(input())
-for i in range(x):
-    for j in range(x-i-1):
-        print(" ",end="")
-    for j in range(i+1):
-        print("*",end=" ")
-    print()
+idx=0
+for  i in range(len(nums)):
+     if nums[i]!=0:
+        nums[idx]=nums[i]
+        idx+=1
+for i in range(idx,len(nums)):
+            numns[i]=0
+       
